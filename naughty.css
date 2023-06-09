@@ -1,0 +1,134 @@
+
+
+html {
+    min-height: 100vh;
+    background-color: $color-batman;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  
+  .wrapper {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+  }
+  
+  .message {
+      color:black;
+     font-family: "Teko",sans-serif;
+     font-size: 3rem;
+  }
+  
+  
+  .board{
+  margin: 0 auto;
+  position:relative;
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+  border: 2px dashed grey;-
+  }
+  
+  
+  .unclickable{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transition: all 0.2s ease;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 0;
+  text-decoration: none;
+  color: white;
+  background-color:rgba(227, 38,54, 0.5);
+  box-shadow: 0 0 0 0.3REM #e32636,0 0 0 0.6rem white;
+  -webkit-animation: wiggle 2s ease-in-out 2s infinite both running;
+  white-space: nowrap;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  .unclickable:hover{
+  
+  background-color: #ffbf00;
+  
+  
+  }
+  .unclickable--active{
+  box-shadow: 0 0 1rem #97cd2d;
+  background-color: #97cd2d;
+  top: 50%;
+  
+  
+  
+  
+  }
+  @-webkit-keyframes wiggle{
+  0% {
+  
+  transform: rotate(0deg);
+  
+  }
+  25% {
+      transform: rotate(-33deg);
+    }
+    50% {
+      transform: rotate(33deg);
+      transform: scale(0.5);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    90% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-33deg);
+    }
+    50% {
+      transform: rotate(33deg);
+      transform: scale(0.5);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    90% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  
+  
+  }
